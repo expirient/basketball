@@ -1,0 +1,23 @@
+{
+  "name": "basketball",
+  "version": "0.0.2",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/expirient/basketball.git"
+  },
+  "author": "Ohorenko V",
+  "license": "Entessa",
+  "bugs": {
+    "url": "https://github.com/expirient/basketball/issues"
+  },
+  "homepage": "https://github.com/expirient/basketball#readme",
+  "devDependencies": {
+    "express": "^4.14.0"
+  }
+}
