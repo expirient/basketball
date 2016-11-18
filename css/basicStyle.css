@@ -1,0 +1,378 @@
+@import url("menuTop.css");
+@import url("slider.css");
+@import url("accordionMenu.css");
+@import url("newsContent.css");
+@import url("newsContent1.css");
+
+.clearfix:after,
+.clearfix:before{
+content: " ";
+display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+
+*{
+	margin: 0 0;
+	padding: 0 0;
+}
+
+body{
+	width: 100%;
+	height:100%;
+	background-image: url(../images/cracked_wall.png);
+	min-height: 800px;
+	min-width: 960px;
+}
+
+#header{
+	width: 95%;
+	height: 600px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+#header .logo{
+	cursor: pointer;
+	float: left;
+	width: 30%;
+	height: 150px;
+	margin-left: 10px;
+	margin-top:7px;
+	text-transform: capitalize;
+	background: linear-gradient(to left, #565656, #fff, #9D9D9D);
+	border-radius: 75px;
+	font-weight: bold;
+	font-family: comic sans ms;
+	box-shadow: 3px 3px 5px 3px #000;
+	transition: all 1.1s ease-in-out;
+
+}
+
+#header .logo:hover{
+	background-image: url(../images/boll.jpg);
+	transform: rotate(360deg);
+	transition: all 1.5s ease-in-out;
+	color: #ffff00;
+	background-size: auto auto;
+	background-position: center;
+	box-shadow: 3px 3px 5px 3px #ffff00;
+}
+
+#header .logo h1{
+	padding-top: 40px;
+}
+
+#header .logo .h1{
+	transition: all 1.5s ease-in-out;
+	vertical-align: middle;
+}
+
+#header .logo .h1:hover{
+	color: #ffff00;
+	transition: all 1.5s ease-in-out;
+}
+
+#header .logo h1{
+	height: 100%;
+	width: 100%;
+}
+
+
+#header .menuTop{
+	float: right;
+	width: 67%;
+
+	height: 150px;
+	
+}
+
+#header .slider{
+	float: left;
+	height: 420px;
+	width: 100%;
+	
+}
+
+#allContent{
+	width: 95%;
+	height: 1000px;
+	margin: 20px auto;
+	
+}
+
+#sidebarL{
+	width: 18%;
+	height: 1000px;
+	
+	float: left;
+}
+
+#content{
+	width: 60.4%;
+	height: 1000px;
+	float: left;
+	margin: 0 0 0 10px;
+	overflow: auto;
+}
+
+#content .toTop{
+	margin: 20px 0 20px 10px;
+}
+
+#content .fixedNum{
+	background: #fff;
+	position: fixed;
+	top: 195px;
+	left: 0;
+	box-shadow: 3px 3px 5px;
+}
+
+#content .toTop input{
+	padding: 3px 20px;
+	border-radius: 20px;
+	outline: none;
+	background: #CACFCF;
+	font-family: comic sans ms;
+	box-shadow: 2px 2px 3px;
+	transition: all 0.6s ease-out;
+}
+#content .toTop a{
+	text-decoration: none;
+}
+
+#content .toTop input:hover{
+	background: #000;
+	color: #ffff00;
+	box-shadow: 3px 3px 5px #fff;
+	transition: all 0.4s ease-out;
+	transform:rotate(360deg) translateX(10px) scale(1.2);
+}
+
+
+#sidebarR{
+	width: 20.5%;
+	height: 1000px;
+	float: left;	
+}
+
+#sidebarR fieldset{
+	margin: 20px 10px;
+	padding: 30px 20px;
+	border-radius: 30px;
+	background: linear-gradient(to left, #565656, #fff, #9D9D9D);
+	box-shadow: 5px 5px 7px;
+	opacity: 0.9;
+	text-align: center;
+}
+
+.input{
+	margin: 10px auto;
+	border-radius: 20px;
+	box-shadow: 3px 3px 5px;
+	outline: none;
+	background: #F3FF96;
+	transition: all 0.4s ease-in-out;
+}
+
+#sidebarR .input:hover{
+	transform: scale(1.2);
+	transition: all 0.4s ease-in-out;
+	background: #ffff00;
+	border: 2px solid #000;
+}
+
+#sidebarR .input:focus{
+	background: #FFFFE0;
+	color: #000;
+	border: 2px solid;
+	transform: scale(1.2);
+	transition: all 0.6s ease-in-out;
+}
+
+#sidebarR .regButton{
+	background: linear-gradient(to top, #565656, #fff, #fff, #9D9D9D);
+	color: #000;
+	font-family: comic sans ms;
+	font-weight: bold;
+	padding: 2px 5px;
+	margin: 15px 8px;
+	box-shadow: 3px 3px 5px;
+	border-radius: 16px;
+	outline: none;
+	transition: all 0.7s ease-out;
+}
+
+#sidebarR .regButton:hover{
+	background: #000;
+	color: #ffff00;
+	box-shadow: 2px 3px 5px #ffff00;
+	transform:rotate(360deg) translateX(10px) scale(1.2);
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+}
+
+#sidebarR label{
+	cursor: pointer;
+	font-family: comic sans ms;
+}
+
+#sidebarR legend{
+	font-size: 20px;
+	font-family: comic sans ms;
+	font-weight: bold;
+}
+
+#sidebarR .table{
+	font-family:  comic sans ms; 
+	text-align: center;
+}
+
+#sidebarR .table h2{
+	padding: 20px 0 5px 0;
+	
+}
+
+#sidebarR .table th{
+	background: #B5DBDB;
+	padding: 3px 7px;
+	border:1px solid;
+	box-shadow: 3px 3px 5px; 
+	border-radius: 10px;
+	font-weight: bold;
+	transition: all 0.5s ease-in-out;
+}
+
+#sidebarR table{
+	border: 2px solid;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 45px 5px;
+	background: linear-gradient(to left, #565656, #fff, #9D9D9D);
+	opacity: 0.9;
+	width: 92%;
+	box-shadow: 3px 3px 5px; 
+}
+
+#sidebarR .table td{
+	background: #DBDBDB;
+	border: 1px solid;
+	box-shadow: 3px 3px 5px;
+	border-radius: 10px;
+	text-align: center;
+	color: #333;
+	transition: all 0.5s ease-in-out;
+}
+
+#sidebarR th:hover{
+	background: #000;
+	color: #ffff00;
+	box-shadow: 2px 3px 5px #ffff00;
+	transform:rotate(5deg) translateX(10px) scale(1.2);
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+}
+
+#sidebarR td:hover{
+	background: #000;
+	color: #ffff00;
+	box-shadow: 2px 3px 5px #ffff00;
+	transform:rotate(5deg) translateX(10px) scale(1.2);
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+}
+
+#footer{
+	width: 95%;
+	height: 150px;
+	margin: 10px auto;
+	border-radius: 75px;
+	background: linear-gradient(to left, #565656, #fff, #9D9D9D);
+	box-shadow: 3px 3px 5px 3px; 
+
+}
+
+#footer input{
+	margin: 60px 10px 0 15px;
+	padding: 3px 20px;
+	border-radius: 20px;
+	box-shadow: 3px 3px 5px;
+	font-weight: bold;
+	font-family: comic sans ms;
+	background: linear-gradient(to top, #565656, #fff, #9D9D9D);
+	transition: all 0.4s ease-out;
+	outline: none;
+	cursor: pointer;
+}
+
+#footer input:hover{
+	background: #000;
+	color: #ffff00;
+	box-shadow: 3px 3px 5px #ffff00;
+	transition: all 0.4s ease-out;
+	transform:rotate(360deg) translateX(10px) scale(1.2);
+}
+
+#footer a{
+	text-decoration: none;
+}
+
+#footer .toTop{
+	float: left;
+	width: 30%;
+}
+
+#footer .centerLogo a h1{
+	float: left;
+	text-align: center;
+	font-family: comic sans ms;
+	font-weight: bold;
+	padding: 7px 25px;
+	margin-top: 50px;
+	background: linear-gradient(to top, #828787, #9D9D9D, #C4C9C9);
+	border-radius: 30px;
+	box-shadow: 3px 3px 5px 3px; 
+}
+#footer .centerLogo a,h1{
+	text-decoration: none;
+	color: #000;
+	transition: all 0.8s ease-out;
+}
+
+#footer .centerLogo a h1:hover{
+	transition: all 0.4s ease-out;
+	transform:rotate(5deg) translateX(10px) scale(1.2);
+	background: #000;
+	color: #ffff00;
+	box-shadow: 5px 5px 7px #ffff00;
+}
+
+#footer .contact{
+	float: right;
+	text-align: left;
+	transition: all 0.7s ease-out;
+}
+
+#footer .contact fieldset{
+	margin: 0 50px 0 0;
+	padding: 10px 15px;
+	border-radius: 20px;
+	box-shadow: 3px 3px 5px 3px;
+	font-family: comic sans ms;
+	cursor: pointer;
+	background: #C4C9C9;
+}
+#footer .contact legend{
+	text-align: center;
+	font-family: comic sans ms;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#footer .contact:hover{
+transform: translateX(-100px) translateY(-100px) scale(2);
+transition: all 0.4s ease-out;
+}

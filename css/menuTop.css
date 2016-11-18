@@ -1,0 +1,75 @@
+
+.menuTop{
+	margin-top: 35px;
+}
+
+#header .verticalMenu{
+	width: 99%;
+	height: 100px;
+	font-family: comic sans ms;
+	font-size: 16px;
+	font-weight: bold;
+	background: linear-gradient(to left, #565656, #fff, #9D9D9D);
+	border-radius: 75px;
+	box-shadow: 3px 3px 5px 3px;
+	float: left;
+}
+
+#header .verticalMenu li{
+	display: block;
+	width: 170px;
+	position: relative;
+	z-index: 999;
+	top: 5px;
+	
+	float: left;
+	text-decoration: none;
+}
+
+#header .verticalMenu li a{
+	display: block;
+	text-decoration: none;
+	background: #656565;
+	color: #ffff00;
+	border-radius: 30px;
+	padding: 4px 10px;
+	margin: 1px 5px;
+	box-shadow: 3px 3px 5px;
+	transition: all 0.5s ease-out;
+}
+
+#header .verticalMenu li a:hover{
+	background: #000;
+	color: #ffff00;
+	box-shadow: 3px 3px 5px #fff;
+	transition: all 0.8s ease-out;
+	transform:rotate(5deg) translateX(10px) scale(1.2);
+
+}
+
+#header .verticalMenu ul{
+	list-style: none;
+	position: absolute;
+	left: -9999px;
+}
+
+#header .verticalMenu ul li{
+	padding-top: 1px;
+	float: none;
+}
+
+#header .verticalMenu ul a{
+	white-space: nowrap;
+	display: block;
+}
+
+#header .verticalMenu li:hover ul{
+	left: 0;
+	transform: rotate(2160deg);
+	transition: all 0.4s ease-out;
+	
+}
+
+.padding{
+	padding-left: 50px;
+}
